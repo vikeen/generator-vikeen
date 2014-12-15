@@ -1,0 +1,18 @@
+watch:
+  options:
+    logConcurrentOutput: true
+    limit: 4
+  tasks:
+    - watch:markup
+    - watch:scripts
+    - watch:styles
+    - watch:grunt
+
+main:
+  options:
+    logConcurrentOutput: true
+    limit: 4
+  tasks:
+    - markup
+    - scripts
+    - styles

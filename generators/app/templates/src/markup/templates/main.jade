@@ -1,0 +1,28 @@
+include ../helpers/node-mixins
+
+doctype html
+html
+  head
+
+    block meta
+      include ../includes/meta
+
+    block headStyles
+      include ../includes/headStyles
+
+    block headScripts
+      include ../includes/headScripts
+  body
+
+    block header
+      include ../includes/header
+
+    block mainContent
+      section.mainContent
+        :markdown
+          # Hello World.
+    block footer
+      include ../includes/footer
+
+    block endScripts
+      include ../includes/endScripts

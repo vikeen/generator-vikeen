@@ -1,0 +1,11 @@
+jst:
+  src: <%= paths.src %>/markup/jst/
+  dest: <%= paths.src %>/scripts/jst/
+
+helpers:
+  src: <%= paths.src %>/scripts/jade/helpers/
+  dest: <%= paths.src %>/markup/helpers/scripts/
+
+includes:
+  src: <%= paths.src %>/scripts/jade/includes/
+  dest: <%= paths.src %>/markup/includes/scripts/

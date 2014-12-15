@@ -1,7 +1,7 @@
 {
   "name": "generator-vikeen",
   "author": "John Rake",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Testing yeoman template generation",
   "homepage": "https://github.com/vikeen/generator-vikeen",
   "url": "https://github.com/vikeen/generator-vikeen",

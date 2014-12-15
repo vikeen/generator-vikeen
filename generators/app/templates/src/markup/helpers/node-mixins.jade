@@ -1,0 +1,9 @@
+include shared-mixins
+
+mixin includeMarkdown(file)
+  - html = includeMarkdown(file)
+  != html
+
+mixin includeJSON(file)
+  script(type="application/json")&attributes(attributes)
+    != includeJSON(file)

@@ -1,0 +1,42 @@
+styles:
+  files:
+    - "<%= paths.src %>/styles/**/*"
+  tasks:
+    - styles
+  options:
+    # re-use stylus object for caching imports in memory.
+    #spawn: false
+    # actually, that's still buggy
+    spawn: true
+
+scripts:
+  files:
+    - "<%= paths.src %>/scripts/**/*"
+  tasks:
+    - scripts
+
+markup:
+  files:
+    - "<%= paths.src %>/markup/**/*"
+    - "!<%= paths.src %>/markup/jst/**/*"
+  tasks:
+    - markup
+
+jshint:
+  files:
+    - "<%= paths.src %>/**/*.{js,json}"
+    - "<%= paths.grunt %>/**/*.{js,json}"
+    - "./*.{js,json}"
+  tasks:
+    - jshint:all
+  options:
+    atBegin: true
+
+grunt:
+  files:
+    - "<%= paths.src %>/scripts/jade/helpers/node-locals.js"
+    - "<%= paths.grunt %>/**/*"
+    - "Gruntfile.js"
+  options:
+    reload: true
+    spawn: false

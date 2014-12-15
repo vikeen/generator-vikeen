@@ -1,0 +1,95 @@
+options:
+  paths:
+    facebook: "//connect.facebook.com/en_US/sdk"
+    youtube: "//www.youtube.com/iframe_api?noext"
+    modernizr: vendor/modernizr
+    angular: vendor/angular.min
+    angular-ui-router: "vendor/angular-ui-router.min"
+    angular-animate: "vendor/angular-animate.min"
+    underscore: vendor/lodash.underscore.min
+    underscore.string: "vendor/underscore.string.min"
+    jade: vendor/jade.runtime
+    domReady: "vendor/requirejs-domready"
+    es5: "vendor/es5-shim"
+    json3: "vendor/json3.min"
+    q: "vendor/q"
+    jquery: "vendor/jquery.min"
+    #jquerymigrate: "vendor/jquery-migrate-1.1.1.min"
+    jquery.easing: "vendor/jquery.easing.min"
+    jquery.transit: "vendor/jquery.transit"
+    jquery.scrollTo: "vendor/jquery.scrollTo"
+    jquery.maskedinput: "vendor/jquery.maskedinput.min"
+    jquery.oauthpopup: "vendor/jquery.oauthpopup"
+    jquery.textCounter: "vendor/jquery.textCounter.min"
+    jquery.touchSwipe: "vendor/jquery.touchSwipe.min"
+    jquery.waitforimages: "vendor/jquery.waitforimages"
+    jquery.mousewheel: "vendor/jQuery.mousewheel.min"
+    dragdealer: "vendor/dragdealer"
+    backbone: "vendor/backbone"
+    screenfull: "vendor/screenfull.min"
+    moment: "vendor/moment.min"
+    mCustomScrollbar: "vendor/mCustomScrollbar.min"
+    imagesloaded: "vendor/imagesloaded.pkgd.min"
+    console-polyfill: "vendor/console-polyfill"
+    hammer: 'vendor/hammer.min'
+  enforceDefine: true
+  name: main
+  baseUrl: "<%= paths.build %>/scripts/"
+  optimize: uglify2
+  #optimize: none
+  shim:
+    facebook:
+      exports: FB
+    "social/instagram":
+      deps: ["jquery"]
+      exports: IG
+    youtube:
+      exports: YT
+    modernizr:
+      exports: Modernizr
+    angular:
+      exports: angular
+      deps: ["jquery"]
+    'angular-route':
+      deps: ['angular']
+      exports: 'angular'
+    'angular-ui-router':
+      deps: ['angular']
+      exports: 'angular'
+    'angular-animate':
+      deps: ['angular']
+      exports: 'angular'
+    jquery.easing:
+      deps: ["jquery"]
+      exports: jQuery
+    jquerymigrate:
+      deps: ["jquery"]
+      exports: jQuery
+    jquery.transit:
+      deps: ["jquery"]
+      exports: jQuery
+    jquery.maskedinput:
+      deps: ["jquery"]
+      exports: jQuery
+    jquery.oauthpopup:
+      deps: ["jquery"]
+      exports: jQuery
+    jquery.mousewheel:
+      deps: ["jquery"]
+      exports: jQuery
+    #jquery.scrollTo:
+    #  deps: ["jquery"]
+    #  exports: jQuery
+    screenfull:
+      exports: screenfull
+    mCustomScrollbar:
+      deps: ["jquery"]
+      exports: jQuery
+
+main:
+  options:
+    include: ['vendor/require']
+    # already on page
+    exclude: ['modernizr']
+    out: <%= paths.build %>/scripts/main.pkgd.js
+    insertRequire: ['main']

@@ -1,0 +1,18 @@
+markup:
+  options:
+    title: Markup Complete
+    message: |
+      <%= pkg.name %>
+      Compiled Jade in <%= paths.src %>/markup/htdocs/ to HTML in <%= paths.project %>/
+styles:
+  options:
+    title: Styles Complete
+    message: |
+      <%= pkg.name %>
+      Compiled Stylus in <%= paths.src %>/styles/lib/ to CSS in <%= paths.dest %>/styles/
+scripts:
+  options:
+    title: Scripts Complete
+    message: |
+      <%= pkg.name %>
+      Compiled Jade and AMD JS modules in <%= paths.src %>/scripts/ to JS in <%= paths.dest %>/scripts/

@@ -1,0 +1,12 @@
+// Imports.
+//@import nib
+@import "kouto-swiss"
+
+hashLookup(obj, key)
+  obj[key]
+
+imageUrl(image)
+  url(s('%s/%s', unquote(hashLookup(paths, 'images')), unquote(image)))
+
+// Font Family Stacks
+sansStack = Helvetica, Arial, sans-serif

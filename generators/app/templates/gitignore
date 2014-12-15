@@ -1,0 +1,36 @@
+### https://raw.github.com/github/gitignore/fcce3b8de0e4b7a1c525ad4867f4ce8af4990854/Global/OSX.gitignore
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+### https://raw.github.com/github/gitignore/fcce3b8de0e4b7a1c525ad4867f4ce8af4990854/yeoman.gitignore
+
+node_modules/
+bower_components/
+*.log
+
+build/
+dist/
+
+
+### https://raw.github.com/github/gitignore/fcce3b8de0e4b7a1c525ad4867f4ce8af4990854/Global/SublimeText.gitignore
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
