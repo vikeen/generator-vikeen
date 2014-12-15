@@ -5,11 +5,11 @@ Web application codebase bootstrap via Yeoman
 
 ## Installation
 
-  npm install -g generator-vikeen
+  `npm install -g generator-vikeen`
 
 ## Tests
 
-  npm test
+  `npm test`
 
 ## Release History
 
