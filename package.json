@@ -16,7 +16,6 @@
     "url": "https://github.com/vikeen/generator-vikeen/issues"
   },
   "file": [],
-  "main": "index.js",
   "dependencies": {
     "yeoman-generator": "^0.17.7"
   },
