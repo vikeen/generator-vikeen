@@ -2,9 +2,9 @@
 'use strict';
 var assert = require('assert');
 
-describe('simloovoo generator', function () {
+describe('generator-vikeen', function () {
   it('can be imported without blowing up', function () {
-    var app = require('../app');
+    var app = require('../generators/app/index.js');
     assert(app !== undefined);
   });
 });
