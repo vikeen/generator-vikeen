@@ -11,9 +11,10 @@ Web application codebase bootstrap via Yeoman
    - `npm install -g generator-vikeen`
 
 ## Use
-  1. Make a new project directory then switch to it
-  2. `yo vikeen`
-  3. Presto
+  1. `mkdir PROJECT_NAME`
+  2. `cd PROJECT_NAME` 
+  3. `yo vikeen`
+  4. Presto
 
 ## Tests
 
