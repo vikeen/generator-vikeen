@@ -4,8 +4,11 @@ generator-vikeen
 Web application codebase bootstrap via Yeoman
 
 ## Installation
+  Install yeoman framework
+    `npm install -g yo`
 
-  `npm install -g generator-vikeen`
+  Install our generator
+    `npm install -g generator-vikeen`
 
 ## Tests
 
